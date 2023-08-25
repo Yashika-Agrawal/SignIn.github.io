@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Employer Login/Sign Up Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/590bbea519.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="employer.css" />
+  </head>
+
+  <body>
+    <button id="switch"><a href="index.html">User Login</a></button>
+    <div id="container" class="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <!-- Company's details -->
+          <input type="text" placeholder="Company Name*" required />
+          <input type="text" placeholder="Industry or Sector*" required />
+          <textarea placeholder="Company's Brief Overview*"></textarea>
+          <input type="url" placeholder="Company's Website" />
+          <input type="text" placeholder="Company's Size" />
+          <input type="text" placeholder="Company's Location" />
+          <label for="companyLogo">Company's logo</label>
+          <input type="file" accept=".jpg, .png" />
+
+          <!-- Contact information -->
+          <input type="text" placeholder="Contact Person's Name*" required />
+          <input type="tel" placeholder="Contact Person's Number*" required />
+          <input
+            type="email"
+            placeholder="Contact Person's Email Id*"
+            required
+          />
+
+          <!-- Create account -->
+          <h2>Create</h2>
+          <input type="text" placeholder="Username*" required />
+          <input type="password" placeholder="Password*" required />
+
+          <!-- Verification -->
+          <h3>Verification</h3>
+          <!-- Checkbox-based CAPTCHA -->
+          <div class="captcha-container">
+            <label for="captchaCheckbox">I'm not a robot</label>
+            <input type="checkbox" id="captchaCheckbox" required />
+          </div>
+          <!-- Add any verification elements you want here, e.g., checkbox-based CAPTCHA -->
+
+          <button>Sign Up</button> <br />
+          <br />
+          <br />
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Employer Sign In</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" /> <br />
+          <br />
+
+          <button>Sign In</button> <br />
+          <br />
+          <a href="#">Forgot your password?</a>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back, Employer!</h1>
+            <p>Please sign in to access your employer account.</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Employer!</h1>
+            <p>Enter your company details to create an employer account.</p>
+            <button class="ghost" id="signUp">Sign Up</button> <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="employer.js" async defer></script>
+  </body>
+</html>
